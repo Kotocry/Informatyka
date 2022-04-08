@@ -7,23 +7,23 @@ int main()
 	int p = 2;
 	int n;
 	int d;
-	bool a = true;
+	bool x;
 
 	cout << "Ile liczb pierwszych chcesz wyświetlić: ";
 	cin >> n;
 
 	while (lp < n)
 	{
-		for (int d = 2 + 1; d <= p - 1; d++)
+		x = true;
+		for (int d = 2; d <= p - 1; d++)
 		{
 			if (p % d == 0)
 			{
-				p = p + 1;
-				a = false;
+				x = false;
 			}
 		}
-		if () {
-			cout << p << endl;
+		if (x == true) {
+			cout << " " << p;
 			lp = lp + 1;
 		}
 		p = p + 1;
